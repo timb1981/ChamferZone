@@ -1,0 +1,11 @@
+/*
+# This file will DISABLE all Plugin Activation Notices which are bundled with CUFO THEME.
+*/
+
+.bsf-update-nag,
+.eg-update-notice-wrap,
+.rs-update-notice-wrap,
+.vc_license-activation-notice,
+.notice.notice-warning.vc_settings-custom-design-notice {
+	display: none !important;
+}

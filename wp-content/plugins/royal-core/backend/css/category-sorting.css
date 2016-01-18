@@ -1,0 +1,28 @@
+.form-table td {
+	padding: 0 !important;
+}
+
+.form-table tbody tr:nth-child(2),
+.form-table tbody tr:nth-child(1) th {
+	display: none !important;
+}
+
+.ui-state-default span {
+	display: inline-block;
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	cursor: move;
+}
+
+.ui-state-highlight {
+	display: inline-block;
+	width: 317px;
+	height: 36px;
+	border: 2px dashed #ccc;
+}
+
+p.submit {
+	margin-top: 7px !important;
+}

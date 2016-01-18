@@ -1,0 +1,10 @@
+#backup_design {
+	width: 500px;
+	height: 200px;
+	margin: 10px 0 0 3px;
+	padding: 10px 15px;
+}
+
+form > p {
+	width: 43%;
+}
