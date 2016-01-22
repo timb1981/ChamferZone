@@ -12,7 +12,7 @@ $pSingle_share 		= get_option( 'royal_pSingle_share' );
 $pSingle_project 	= get_option( 'royal_pSingle_project' );
 $similars_general 	= get_option( 'royal_similars_general' );
 $similars_title 	= get_option( 'royal_similars_title' );
-$comments_general 	= get_option( 'royal_comments_general' );
+//$comments_general 	= get_option( 'royal_comments_general' );
 
 ?>
 
@@ -69,7 +69,7 @@ $comments_general 	= get_option( 'royal_comments_general' );
 
 				<div class="title-and-meta">
 
-					<h1 class="single-title"><?php the_title(); ?></h1>
+
 
 					<span class="post-meta-info single-meta">
 
@@ -81,7 +81,7 @@ $comments_general 	= get_option( 'royal_comments_general' );
 						<?php
 
 						// comments number
-						if ( comments_open() && ! post_password_required() ) {
+						/*if ( comments_open() && ! post_password_required() ) {
 
 							echo '<span class="post-comments-wrap">';
 
@@ -90,7 +90,7 @@ $comments_general 	= get_option( 'royal_comments_general' );
 
 							echo '</span>';
 
-						}
+						}*/
 
 						// portfolio categories
 						if ( $portfolio_cat_list !== false ) {
@@ -312,9 +312,12 @@ $comments_general 	= get_option( 'royal_comments_general' );
 
 
 	// display comments - get comments.php
-	if ( $comments_general['portfolio_display'] === true ) {
-		comments_template( '', true );
-	}
+	//if ( $comments_general['portfolio_display'] === true ) {
+		//comments_template( '', true );
+	//}
+
+	//echo do_shortcode('[fbcomments]');
+
 
 	?>
 

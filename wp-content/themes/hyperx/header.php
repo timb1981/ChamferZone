@@ -9,6 +9,8 @@
 </head>
 
 <?php
+     $socials 			= get_option( 'royal_socials' );
+
 
 	// get theme customzier data
 	$preloader 			= royal_get_option( 'royal_preloader' );
@@ -633,6 +635,8 @@
 					
 					<section class="logo-and-tagline clearfix">
 
+
+
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr(bloginfo('name')); ?>" class="logo-wrap">
 							<?php if( $logo['type'] === 'image' ) : ?>
 								<div class="logo-img">
@@ -668,6 +672,7 @@
 					}
 
 					?>
+
 
 					<div class="clear"></div>
 

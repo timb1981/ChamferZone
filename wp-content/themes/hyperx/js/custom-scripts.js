@@ -1470,6 +1470,7 @@ jQuery(document).ready(function( $ ) {
 
 			// category deeplinking
 			if ( body.hasClass('deeplinking') ) {
+
 				var winLocation = window.location.href;
 				if ( winLocation.match('#filter:all') ) {
 					$('#'+ page +'-container').isotope({ filter: '*' });
@@ -1478,6 +1479,12 @@ jQuery(document).ready(function( $ ) {
 					currentFilters.find('a').removeClass('active-filter-item active-state');
 					currentFilters.find('a[data-filter=".'+ winLocation.substr( winLocation.indexOf('#filter:') + 8, winLocation.length ) +'"]').addClass('active-filter-item active-state');
 				}
+
+				setTimeout(function() {
+					isotopeFn('portfolio');
+					isotopeFn('blog');
+				}, 700);
+
 			}
 
 			
@@ -1555,12 +1562,9 @@ jQuery(document).ready(function( $ ) {
 				}
 
 				setTimeout(function() {
-					if ( currentGrid === 'portfolio-container' ) {
-						isotopeFn('portfolio');
-					} else {
-						isotopeFn('blog');
-					}
-				}, 3000);
+					isotopeFn('portfolio');
+					isotopeFn('blog');
+				}, 700);
 
 				event.preventDefault();
 			});

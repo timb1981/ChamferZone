@@ -1242,18 +1242,18 @@ if ( ! function_exists('royal_register_sidebars') ) {
 				'after_title' 	=> '</span></h3>'
 			));
 
-			// Footer sidebar
-			register_sidebar(array(
-				'name' 			=> esc_html__( 'Footer Widgets', 'hyperx' ),
-				'id' 			=> 'footer-widgets',
-				'description' 	=> esc_html__( 'Page Footer widgetized area', 'hyperx' ),
-				'before_widget' => '<section id="%1$s" class="footer-widget %2$s">',
-				'after_widget' 	=> '</section>',
-				'before_title' 	=> '<h3 class="foot-widget-title"><span>',
-				'after_title' 	=> '</span></h3>'
-			));
-
 		}
+
+		// Footer sidebar
+		register_sidebar(array(
+			'name' 			=> esc_html__( 'Footer Widgets', 'hyperx' ),
+			'id' 			=> 'footer-widgets',
+			'description' 	=> esc_html__( 'Page Footer widgetized area', 'hyperx' ),
+			'before_widget' => '<section id="%1$s" class="footer-widget %2$s">',
+			'after_widget' 	=> '</section>',
+			'before_title' 	=> '<h3 class="foot-widget-title"><span>',
+			'after_title' 	=> '</span></h3>'
+		));
 
 	}
 }

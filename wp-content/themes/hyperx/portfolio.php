@@ -21,10 +21,7 @@ if ( ! post_type_exists('royal_portfolio') ) {
 	return;
 }
 
-
 ?>
-
-
 
 
 <!-- Portfolio Filters -->

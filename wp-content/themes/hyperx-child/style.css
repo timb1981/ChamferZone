@@ -15,3 +15,45 @@ License URI: See in Zip Package
 /* Theme customization starts here
 -------------------------------------------------------------- */
 
+#main-wrap
+{
+    z-index:2;
+}
+/*.copy-and-soc
+{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+
+}*/
+#menu-main-1
+{
+    margin-top:35px;
+}
+/*.inner-content-wrap
+{
+    margin-top:35px!important;
+}
+@media only screen and (max-width: 950px) {
+    .inner-content-wrap
+    {
+        margin-top:0!important;
+    }
+}*/
+
+
+.gallery-slide
+{
+    padding-bottom: 20px;
+}
+.single-content-wrap .single-content h3
+{
+    display:none;
+}
+.single-content-wrap .single-content p
+{
+    display:none;
+}

